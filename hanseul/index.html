@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>최한슬 포트폴리오</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/confetti_v2.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div class="cover"></div>
+        <!-- header -->
+        <div id="header">
+            <!-- <h1>로고</h1> -->
+            <ul class="gnb">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div> 
+        
+        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">About_me <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">Skill</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">PC</a></li>
+                          <li><a href="#">MOBILE</a></li>
+                          <li><a href="#">RESPONSIVE</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Contact</a></li>
+
+                    </ul>
+ 
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+
+
+    
+    <div class="main_visual">
+        <div class="buttonContainer">
+            <button class="canvasBtn" id="stopButton">stop confetti</button>
+            <button class="canvasBtn" id="startButton">drop confetti</button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <h1 class="pc"><img src="images/main_visual.png" alt="메인비주얼 타이틀"></h1>
+        <h1 class="mobile"><img src="images/m_main_visual.png" alt="메인비주얼 타이틀"></h1>
+        <a href="javascript:;" class="btn_down"><i class="fas fa-chevron-down"></i></a>
+    </div>
+    <!-- main -->
+    <div id="main">    
+        <div class="about">
+            <div class="left">
+                <div class="profile">
+                    <img src="images/mee.png" alt="프로필 사진">
+                </div>
+                <div class="name"></div>
+                <div class="line"></div>
+                <div class="title">
+                    <h3>HANSEUL CHOI</h3>
+                    <p>빠르게 변화하는 흐름에 맞추어<br><span>끊임없이 변화하는 개발자</span> 최한슬 입니다</p>
+                </div>
+                <p>
+                    배우는 것을 즐기며,<br>
+                    여행과 사람으로 행복을 느끼며<br>
+                    즐겁게 살아가는 행복한 사람 최한슬입니다.<hr>
+                    즐길 때는 즐기지만 업무시에는 차분한 성격으로 맡은업무에 책임감을 가지고 마무리합니다.<br>
+                    언제나 행복 바이러스 뿜뿜한 인재 최한슬. 빨리데려가시는 분 임자에요 :)
+                </p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <h5>최한슬 / Hanseul Choi</h5>
+                        <p class="birth">최한슬</p>
+                        <p class="birth">1996.10.09 / 서울특별시</p>
+                        <p>Tel. 010-9281-5028</p>
+                        <p>Email. apfhd3478@naver.com<p>
+                        <p>서울특별시 도봉구 쌍문동</p>
+                    </li>
+                    <li>
+                        <h5>Education completion</h5>
+                        <p><span>교육기간</span> : 2020.09 ~ 2021.03</p>
+                        <p><span>교육명</span> : 프론트앤드개발자 양성과정(웹퍼블리셔,웹디자인)</p>
+                        <p><span>교육기관명</span> : 대우직업능력 개발원</p>
+                        <p><span>연수내용</span><br>
+                            - 웹표준 기반의 HTML5 & CSS1,2 & CSS3 전반<br>
+                            - 웹 접근성 기반의 Javascript & Jquery (정적, 동적 반응형 그리드 시스템)<br>
+                            - PC버전의 웹사이트 & 모바일 사이트 & 반응형 웹사이트 메인페이지/서브페이지 작업 다수<br>
+                            - Javascript 프레임워크기반 (Vue.js)<br>
+                            - UI/UX 디자인 -> 포토샵, 일러스트
+                        </p>
+                    </li>
+                    <li>
+                        <h5>LICENSE</h5>
+                        <p><span>2021.01 </span>GTQ 1급 포토샵</P>
+                        <P><span>2014.11 </span>ITQ 인터넷 A등급</P>
+                        <P><span>2013.05 </span>컴퓨터활용능력 2급</P>
+                        <P><span>2013.03 </span>ITQ 한글엑셀 A등급</P>
+                        <P><span>2013.02 </span>워드프로세서 1급</P>
+                        <P><span>2012.08 </span>ITQ 한글 파워포인트 A등급</P>
+                        <P><span>2012.05 </span>ITQ 아래한글 A등급</P>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about_me">
+            <div class="container">
+                <h2 class="wow bounce" data-wow-delay="1s">"나는 행복한 사람"</h2>
+                <p class="wow fadeIn" data-wow-delay="2.2s">넘치는 체력과 에너지, 열정은 나 최한슬을 대표하는 단어입니다.</p>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="images/main_01_1.off.jpg" alt="내 이미지">
+                            </div>
+                            <div class="caption">
+                                <h3>체력왕 나의 취미</h3>
+                                <p>
+                                  오락실 농구 400점, 사격 무조건 인형땀.
+                                </p>
+                                <span>
+                                  체력은 타고나는 것도 있지만, 관리하는 만큼 보여지는 것이라 생각합니다.
+                                  활동적인 취미를 좋아하기때문에 헬스, 스킨스쿠버 동아리를 하고있으며,
+                                  언제나 나태해지지 않기위해 노력하고있습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-sm-12">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="images/main_01_2.off.jpg" alt="내 이미지">
+                            </div>
+                            <div class="caption">
+                                <h3>친화력/적응력 짱</h3>
+                                <p>
+                                    "넌 무인도에서도 잘 살 것 같아!"
+                                </p>
+                                <span>
+                                  2년 전 혼자떠난 유럽여행에서 홍콩사람을 만나 함께 여행하였습니다.
+                                  중국어도 영어도 유창한 실력은 아니었지만, 타국에서 만난 우리는
+                                  서로에게 큰 힘이 되는 진정한 친구였습니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-sm-12">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="images/main_01_3.off.png" alt="내 이미지">
+                            </div>
+                            <div class="caption">
+                              <h3>배움의 즐거움을 아는 사람</h3>
+                              <p>
+                                클라이밍, 폴댄스, 영상, 디자인..
+                              </p>
+                              <span>
+                                  배움은 끝이 없듯이 배우고 싶은 것이 정말 많습니다.
+                                  새로운 것을 배우는 것은 즐겁고 의미있는 일입니다.
+                                  지금에 머무는 사람보다는 꾸준히 성장하는 사람이되고자
+                                  열심히 배우는 자세로 임하겠습니다.
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-sm-12">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="images/main_01_4.off.jpg" alt="내 이미지">
+                            </div>
+                            <div class="caption">
+                              <h3>유쾌 상쾌 통쾌</h3>
+                              <p>
+                                깨발랄은 나의 생명
+                              </p>
+                            <span>
+                                "한슬아 넌 정말 지치지않는 것 같아." 제가 항상 자주듣는 말입니다.
+                                힘들어도 힘든 내색보다는 발랄함을 유지하는 저는 
+                                털털한 성격으로 다양한 사람들과 잘 어울리는 편입니다.
+                            </span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skill">
+            <h2>My Skills</h2>
+            <div class="container">
+                <h3>HTML5</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    95%
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3>CSS3</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_2" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    95%
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3>JAVASCRIPT</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    70%
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3>JQUERY</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    80%
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3>PHOTOSHOP</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_5" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    90%
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <h3>ILLUSTRATOR</h3>
+                <div class="progress">
+                  <div class="progress-bar skill_6" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    85%
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="work">
+            <!-- 포트폴리오 모달창 -->
+            <ul class="modal_pop">
+                <li class="modal_inner">
+                    <img src="images/modal_web_01.png" alt="대림산업 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/daerim/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_web_02.png" alt="삼양식품 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/samyang/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_web_03.png" alt="레스포색 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/res/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_web_04.png" alt="포도팟 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/podopot/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_web_05.png" alt="포스코 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.dothome.co.kr/posco/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_mob_01.png" alt="서브웨이 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/subway/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_mob_02.png" alt="LG헬로우모바일 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/lg/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_mob_03.png" alt="대상주식회사 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/daesang/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_mob_04.png" alt="아쿠아리움 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/aquarium/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_mob_05.png" alt="동부건설 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/dongbu/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_res_01.png" alt="현대글로비스 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.dothome.co.kr/hyundai/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_res_02.png" alt="앨리트학생복 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/elite/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+                <li class="modal_inner">
+                    <img src="images/modal_res_03.png" alt="라푸마 모달팝업">
+                    <button class="btn_close"><img src="images/btn_close.png" alt="모달창 닫기버튼"></button>
+                    <a href="http://apfhd3478.cafe24.com/rafuma/index.html" target="_black"><button class="btn_view">WEB VIEW</button></a>
+                </li>
+            </ul>
+            <div class="work_inner">
+                <h2 class="wow fadeInUp">Portfolio</h2>
+                <p class="wow fadeInUp">
+                    교육과정 중 꾸준히 작업한 포트폴리오 결과물입니다.<br>
+                    클릭시 자세한내용을 확인 하실 수 있습니다 :)
+                </p>
+                <ul class="btn_modal wow fadeInUp" data-wow-delay="0.3s">
+                    <li id="allb" class="on"><a href="javascript:;">ALL</a></li>
+                    <li id="webb"><a href="javascript:;">WEB VIEW</a></li>
+                    <li id="mobb"><a href="javascript:;">MOBILE VIEW</a></li>
+                    <li id="resb"><a href="javascript:;">RESPONSIVE VIEW</a></li>
+                </ul>
+                <ul class="portfolio grid wow fadeInUp" data-wow-delay="0.6s">
+                    <!-- pc 디자인 -->
+                    <li class="grid-item web">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/web_01.png" alt="대림이앤씨 로고">
+                            <img class="logo_on" src="images/pc_01.png" alt="대림이앤씨 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item web">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/web_02.png" alt="삼양식품 로고">
+                            <img class="logo_on" src="images/pc_02.png" alt="삼양식품 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item web">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/web_03.png" alt="레스포색 로고">
+                            <img class="logo_on" src="images/pc_03.png" alt="레스포색 홈페이지">
+                        </a>       
+                    </li>
+                    <li class="grid-item web">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/web_04.png" alt="포도팟 로고">
+                            <img class="logo_on" src="images/pc_04.png" alt="포도팟 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item web">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/web_05.png" alt="포스코 로고">
+                            <img class="logo_on" src="images/pc_05.png" alt="포스코 홈페이지">
+                        </a>
+                    </li>
+                    <!-- 모바일 디자인 -->
+                    <li class="grid-item mob">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/mobile_01.png" alt="서브웨이 로고">
+                            <img class="logo_on" src="images/mob_01.png" alt="서브웨이 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item mob">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/mobile_02.png" alt="LG헬로우모바일 로고">
+                            <img class="logo_on" src="images/mob_02.png" alt="LG헬로우모바일 홈페이지">
+                        </a>  
+                    </li>
+                    <li class="grid-item mob">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/mobile_03.png" alt="대상주식회사 로고">
+                            <img class="logo_on" src="images/mob_03.png" alt="대상주식회사 홈페이지">
+                        </a> 
+                    </li>
+                    <li class="grid-item mob">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/mobile_04.png" alt="아쿠아리움 로고">
+                            <img class="logo_on" src="images/mob_04.png" alt="아쿠아리움 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item mob">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/mobile_05.png" alt="동부건설 로고">
+                            <img class="logo_on" src="images/mob_05.png" alt="동부건설 홈페이지">
+                        </a>
+                    </li>
+                    <!-- 반응형 디자인 -->
+                    <li class="grid-item res">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/responsive_01.png" alt="현대글로비스 로고">
+                            <img class="logo_on" src="images/res_01.png" alt="현대글로비스 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item res">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/responsive_02.png" alt="앨리트학생복 로고">
+                            <img class="logo_on" src="images/res_02.png" alt="앨리트학생복 홈페이지">
+                        </a>
+                    </li>
+                    <li class="grid-item res">
+                        <a href="javascript:;">
+                            <img class="logo" src="images/responsive_03.png" alt="라푸마 로고">
+                            <img class="logo_on" src="images/res_03.png" alt="라푸마 홈페이지">
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- work inner -->
+        </div> <!-- work -->
+        <!-- <div class="design">
+            <div class="container">
+                <ul>
+                    <li class="col-md-4">
+                        <img src="images/design_01.png" alt="">
+                    </li>
+                    <li class="col-md-4">
+                        <img src="images/design_02.png" alt="">
+                    </li>
+                    <li class="col-md-4">
+                        <img src="images/design_03.png" alt="">
+                    </li>
+                    <li class="col-md-4">
+                        <img src="images/design_04.png" alt="">
+                    </li>
+                    <li class="col-md-4">
+                        <img src="images/design_06.png" alt="">
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow flash">매진임박! 지금 바로 연락주세요</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><i class="fas fa-phone-alt"></i> 010-9281-5028</li>
+                            <li><a  href="mailto:apfhd3478@naver.com">apfhd3478@naver.com</a></li>
+                            <li><a href="http://apfhd3478.cafe24.com/hanseul/index.html">http://apfhd3478.cafe24.com/hanseul/index.html</a></li>
+                        </ul>
+                        <p>감사합니다. 신입 퍼블리셔 <span>최한슬</span>이었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- main -->
+    <div id="footer">
+        <p>@2021 copyrights Hanseul Choi | All rights reserved</p>
+    </div>
+    <button class="btn_top" type="button"><img src="images/btn_top.png" alt="위로 스크롤버튼"></button>
+</div>
+</body>
+</html>

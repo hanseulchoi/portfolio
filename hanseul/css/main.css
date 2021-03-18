@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{font-family: 'Noto Sans KR', sans-serif,'Nanum Brush Script', cursive;}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+::selection {
+    background-color: #cb817e;
+    color: #FFF;
+}
+canvas{z-index: 10;pointer-events: none;position: fixed;top: 0;transform:scale(1.1);}
+.buttonContainer{opacity: 0;}
+/* HEADER */
+.navbar{display: none;}
+#header{position: fixed;opacity: 0;width: 100%;height: 80px;z-index: 2;transition: all 0.5s ease-out;}
+#header h1{position: absolute;left: 0;top: 0;}
+#header .gnb{text-align: center;}
+#header .gnb li{display: inline-block;}
+#header .gnb li a{display: block;font-size: 20px;padding:0 45px;line-height: 80px;color:#35373d;transition:all 0.3s ease}
+#header .gnb li a:hover{transform:scale(1.2)}
+#header .m_btn{position: fixed;width: 30px;height: 30px;right: 20px;top: 25px;border:none;z-index: 5;background: none;outline: none;cursor: pointer;}
+#header .m_btn span:nth-child(1){display: block;width: 30px;height: 2px;background: #000;transition:all 0.3s ease;}
+#header .m_btn span:nth-child(2){display: block;width: 30px;height: 2px;background: #000;margin-top: 10px;transition:all 0.3s ease;}
+#header .m_btn span:nth-child(3){display: block;width: 30px;height: 2px;background: #000;margin-top: 10px;transition:all 0.3s ease;}
+/* HEADER ON CLASS */
+#header.on{opacity: 1;background: #6A7BA2;}
+#header.on .gnb li a{color:#fff;}
+#header.on .m_btn span{background: #fff;}
+/* Menu Button ON CLASS */
+#header .m_btn.on span:nth-child(1){transform:rotate(45deg);margin-top: 14px;}
+#header .m_btn.on span:nth-child(2){opacity: 0;}
+#header .m_btn.on span:nth-child(3){transform:rotate(-45deg);margin-top: -14px;}
+/* MAIN_VISUAL */
+.main_visual{position: relative;width: 100%;height: 100vh;background: #6a7ba2;z-index: 1;overflow: hidden;}
+.main_visual h1{position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);}
+.main_visual .mobile{display: none;}
+.main_visual .btn_down{position: absolute;left: 50%;bottom:40px;font-size: 30px;color:#DCE2F0;}
+/* ------------------------------------- main ------------------------------------------- */
+/* about */
+#main .about{overflow: hidden;width: 100%;height: 1000px;box-sizing: border-box;}
+#main .about .left{position: relative;float: left;padding:90px 0 0 100px;}
+#main .about .left .profile{margin-top: 70px;}
+#main .about .left .profile img{width: 200px;border-radius: 20px;box-shadow: 5px 5px 5px #6E6E6D;}
+#main .about .left .title{position: absolute;top:430px;clear:both;}
+#main .about .left .title p{color:#888;font-size: 20px;}
+#main .about .left .title p span{color:#668efd;font-weight: bold;}
+#main .about .left .title h3{font-size: 45px;font-weight: 700;margin-bottom: 20px;}
+#main .about .left p{clear:both;color:#363636;width: 400px;font-size: 16px;}
+#main .about .left .name{width: 450px;height: 20px;background: #feecc8;border-radius: 15px;margin-top: 60px;margin-left: -20px;}
+#main .about .left .line{width: 1px;height:180px;background: #ccc;clear:both;margin-top: 70px;}
+#main .about .right{float:right;padding:200px 50px 0 0;}
+#main .about .right ul{float:left;margin-right: 20px;padding-right:20px;}
+#main .about .right ul li{position: relative;padding:15px 0;border-bottom: 1px dashed #ccc;}
+#main .about .right ul li h5{position: absolute;left: -250px;top:5px;color:#668efd;font-size: 20px;margin-bottom: 20px;}
+#main .about .right ul li p{font-size: 16px;}
+#main .about .right ul li span{font-weight: bold;}
+#main .about .right ul li:last-child{border-bottom:none;}
+#main .about .right ul li .birth{font-size: 13px;font-weight: 500;}
+#main .about .right .skill{width: 300px;}
+#main .about .right .skill .skill_inner{height: 15px;background: #ccc;}
+#main .about .right .skill .skill_inner .html{width: 95%;height:15px;background: #363636;}
+#main .about .right .skill .skill_inner .javascript{width: 70%;height: 15px;background: #363636;}
+#main .about .right .skill .skill_inner .jquery{width: 80%;height: 15px;background: #363636;}
+#main .about .right .skill .skill_inner .pho{width: 90%;height: 15px;background: #363636;}
+#main .about .right .skill .skill_inner .ill{width: 85%;height: 15px;background: #363636;}
+/* about me */
+#main .about_me{width: 100%;background: url("../images/main_01.jpg")no-repeat;background-size: cover;background-attachment: fixed;}
+#main .about_me .container{text-align: center;padding:20px 0;}
+#main .about_me .container h2{font-family: 'Nanum Brush Script';font-size: 50px;}
+#main .about_me .container>p{font-size: 17px;}
+#main .about_me .container img{width: 100%;}
+#main .about_me .container .row{margin-top: 50px;}
+#main .about_me .container .thumbnail h3{font-size: 20px;}
+#main .about_me .container .thumbnail p{font-size: 12px;font-weight: 500;}
+#main .about_me .container .thumbnail img{transition:all 2s ease;}
+#main .about_me .container .thumbnail .image{overflow: hidden;}
+#main .about_me .container .thumbnail:hover img{transform:scale(1.1);}
+/* SKILL */
+#main .skill{width: 100%;background: #fff;overflow: hidden;}
+#main .skill h2{text-align: center;font-size: 30px;padding:30px 0;font-weight: 900;}
+#main .skill h3{font-size: 17px;}
+#main .skill .container .skill_1{background: #cb817e;animation: skill_1 1.5s 0.5s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_1{0%{width:0}100%{width:95%;}}
+#main .skill .container .skill_2{background: #ff927b;animation: skill_2 1.5s 1s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_2{0%{width:0}100%{width:95%;}}
+#main .skill .container .skill_3{background: #60e7e0;animation: skill_3 1.5s 1.5s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_3{0%{width:0}100%{width:70%;}}
+#main .skill .container .skill_4{background: #346898;animation: skill_4 1.5s 2s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_4{0%{width:0}100%{width:80%;}}
+#main .skill .container .skill_5{background: #7fa7cb;animation: skill_5 1.5s 2.5s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_5{0%{width:0}100%{width:90%;}}
+#main .skill .container .skill_6{background:#E8CC4A;animation: skill_6 1.5s 3s ease-out;animation-fill-mode:forwards;}
+@keyframes skill_6{0%{width:0}100%{width:85%;}}
+/* PORTFOLIO */
+.cover{display: none;position: fixed;width: 100%;height: 100%;background: #6e6e6dcc;z-index: 3;}
+.modal_pop{display: none;position: fixed;left: 50%;top: 12%;transform:translateX(-50%);z-index: 10;}
+.modal_pop .modal_inner{position: relative;width:920px;height: 680px;border:20px solid #50586C;overflow: hidden;}
+.modal_pop .modal_inner img{width: 100%;}
+.modal_pop .modal_inner .btn_close{position: absolute;right: 20px;top: 15px;background: none;border:none;outline:none;}
+.modal_pop .modal_inner .btn_view{position: absolute;left: 50%;transform:translateX(-50%);bottom:30px;width:175px;height: 40px;background: #50586C;color:#DCE2F0;border:none;border-radius: 20px;outline:none;transition:all 1s cubic-bezier(0.075, 0.82, 0.165, 1);}
+#main .work{width: 100%;height: auto;background: #DCE2F0;box-sizing: border-box;}
+#main .work .work_inner{width: 1180px;height: auto;margin: 0 auto;}
+#main .work .work_inner>h2{text-align: center;font-size: 30px;padding:50px 0 10px;font-weight: 900;color:#50586C;}
+#main .work .work_inner>p{display: block;text-align: center;}
+#main .work .work_inner>.btn_modal{text-align: center;margin:30px 0;}
+#main .work .work_inner>.btn_modal>li{display: inline-block;border:1px solid#ccc;}
+#main .work .work_inner>.btn_modal>li>a{display: block;width: 150px;height: 40px;line-height: 40px;background: #333D79;color:#FAEBEF;}
+#main .work .portfolio{overflow: hidden;padding-bottom:30px;}
+#main .work .portfolio>li{position: relative;float: left;width:380px;border:1px solid #ccc;margin:0 6px 15px;}
+#main .work .portfolio a img{width: 100%;height: 100%;}
+#main .work .portfolio li .logo{opacity: 1;}
+#main .work .portfolio li .logo_on{opacity: 0;position: absolute;left: 0;top: 0;transition:all 0.3s ease-out;}
+/* PORTFOLIO HOVER */
+#main .work .portfolio li:hover .logo{opacity: 0;}
+#main .work .portfolio li:hover .logo_on{opacity: 1;}
+.modal_pop .modal_inner .btn_view:hover{background:#DCE2F0;color:#50586C;}
+/* PORTFOLIO ON CLASS */
+#main .work .work_inner>.btn_modal>li.on>a{background: #FAEBEF;color:#333D79;}
+/* DESIGN */
+.design ul li{width: 500px;}
+.design ul li img{width: 100%;}
+/* CONTACT */
+.contact{
+    width: 100%;height: 300px;text-align: center;
+    background: url("../images/main_03.jpg")no-repeat;background-attachment:fixed;background-size: cover;
+    color:#fff;
+}
+.contact h2{text-shadow: 2px 2px 5px red;color:#fff;margin: 50px 0;}
+.contact ul li{margin-bottom: 10px;}
+.contact ul li:first-child{font-weight: 700;}
+.contact ul li a{
+    /* color:#333D79; */
+    color:#fff;
+    font-weight: 500;
+}
+.contact p{margin-top:30px;}
+/* FOOTER */
+#footer{width: 100%;height: 50px;background: #eaeaea;clear: both;}
+#footer p{font-size: 13px;color:#000;padding-top: 15px;text-align: center;}
+.btn_top{display: none;position:fixed;right: 50px;bottom:100px;border:none;outline:none;}
+.btn_top img{width: 40px;height: 40px;}
+
+@media screen and (max-width:1024px){
+    #wrap{overflow-x: hidden;}
+    .navbar{display: block;}
+    #header{display: none;}
+    .main_visual .mobile{display: block;}
+    .main_visual .pc{display: none;}
+    #main .about{overflow:initial;height: 2000px;}
+    #main .about .right{float: left;padding-left:100px;}
+    #main .about .right ul li h5{display: none;}
+    #main .about .left{width: 450px;text-align: center;}
+    #main .about .left .profile{margin-left:-30px}
+    #main .about .left .line{margin-left: 150px;}
+    #main .about .left .name{width: 370px;}
+    #main .about .left .title{margin-left: -40px;}
+    #main .about .left>p{width: 300px;}
+    #main .work{width: 100%;}
+    #main .work .portfolio{width:500px;}
+    #main .work .portfolio>li{margin:0;margin-left: 50px;margin-bottom: 10px;box-sizing: border-box;}
+    #main .work .work_inner{width: 100%;}
+    #main .work .btn_modal li{margin-right:20px;margin-bottom: 10px;}
+}
